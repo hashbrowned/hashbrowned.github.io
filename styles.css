@@ -1,0 +1,65 @@
+* {
+	font-family: 'Courier New', monospace;
+	color: rgb(67, 9, 50);
+}
+
+html {
+	min-height: 100%;
+}
+body {
+	background-image: url("photos/star_bg.gif"), linear-gradient(to bottom, rgb(255, 192, 203), rgb(129, 1, 90));
+	background-repeat: repeat;
+	background-blend-mode: lighten;
+	margin: 0px;
+}
+
+section {
+	background-color: rgba(240, 200, 230, 1);
+	padding: 10px;
+	margin: 20px;
+}
+
+footer {
+	background-color: rgb(253, 227, 112);
+	text-align: center;
+	padding: 5px;
+	margin: 0px;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+nav {
+	background-size: 400px 400px;
+	background-color: rgba(253, 227, 112, 1);
+	text-align: center;
+	
+}
+
+h1 {
+	font-size: 150%;
+}
+
+h2 {
+	font-size: 120%;
+}
+
+a:visited {
+	color: rgb(138, 0, 126);
+}
+
+a:hover, a:hover * {
+	color: rgb(224, 59, 114);
+}
+
+#index {
+	background-color: white;
+	background-image: url("");
+}
+
+#notfound {
+	background-color: rgba(240, 200, 230, 1);
+	background-image: url("");
+	text-align: center;
+}
