@@ -16,7 +16,6 @@ body {
 
 #home {
 	margin-top: 75px; /* this is in #home bc it's the top section so the greedy nav bar doesn't cover it */
-	min-height: 200px;
 }
 
 section {
