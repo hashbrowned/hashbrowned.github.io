@@ -5,18 +5,24 @@
 
 html {
 	min-height: 100%;
+	overflow-y: scroll;
 }
 body {
-	background-image: url("photos/star_bg.gif"), linear-gradient(to bottom, rgb(255, 192, 203), rgb(129, 1, 90));
+	background-image: url("photos/star_bg.gif"), linear-gradient(to bottom, rgb(255, 181, 194), rgb(129, 1, 90));
 	background-repeat: repeat;
 	background-blend-mode: lighten;
 	margin: 0px;
 }
 
+#home {
+	margin-top: 75px; /* this is in #home bc it's the top section so the greedy nav bar doesn't cover it */
+	min-height: 200px;
+}
+
 section {
 	background-color: rgba(240, 200, 230, 1);
 	padding: 10px;
-	margin: 20px;
+	margin: 30px;
 	border: 10px solid transparent;
 	border-image-source: url(photos/frame_square.png);
 	border-image-slice: 28;
@@ -30,8 +36,7 @@ footer {
 	background-color: rgb(253, 227, 112);
 	text-align: center;
 	padding: 5px;
-	margin: 0px;
-	position: fixed;
+	position: static;
 	bottom: 0;
 	left: 0;
 	right: 0;
@@ -49,6 +54,11 @@ nav {
 	background-color: rgba(253, 227, 112, 1);
 	text-align: center;
 
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+
 	border-bottom: 10px solid transparent;
 	border-image-source: url(photos/navframe_spikejumble.png);
 	border-image-slice: 28;
@@ -59,7 +69,7 @@ nav {
 }
 
 h1 {
-	font-size: 150%;
+	font-size: 200%;
 }
 
 h2 {
@@ -76,15 +86,4 @@ a:hover, a:hover * {
 
 .image_link:hover {
 	opacity: 0.7;
-}
-
-#index {
-	background-color: white;
-	background-image: url("");
-}
-
-#notfound {
-	background-color: rgba(240, 200, 230, 1);
-	background-image: url("");
-	text-align: center;
 }
