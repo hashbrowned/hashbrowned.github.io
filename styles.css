@@ -6,9 +6,12 @@
 html {
 	min-height: 100%;
 	overflow-y: scroll;
+	cursor: url(photos/star_cursor.png), auto;
 }
+
+
 body {
-	background-image: url("photos/star_bg.gif"), linear-gradient(to bottom, rgb(255, 181, 194), rgb(129, 1, 90));
+	background-image: url("photos/star_bg.gif"), linear-gradient(to bottom, rgb(255, 181, 194), rgb(129, 1, 59));
 	background-repeat: repeat;
 	background-blend-mode: lighten;
 	margin: 0px;
@@ -19,7 +22,7 @@ body {
 }
 
 section {
-	background-color: rgba(240, 200, 230, 1);
+	background-color: rgb(240, 200, 216);
 	padding: 10px;
 	margin: 30px;
 	border: 10px solid transparent;
@@ -48,10 +51,16 @@ footer {
 	border-image-repeat: repeat;
 }
 
+address {
+	font-style: normal;
+}
+
 nav {
 	background-size: 400px 400px;
 	background-color: rgba(253, 227, 112, 1);
 	text-align: center;
+	padding: 5px;
+	color: rgb(138, 0, 126);
 
 	position: fixed;
 	top: 0;
@@ -67,6 +76,15 @@ nav {
 	
 }
 
+.nav_icon {
+	height: 16px;
+	margin-right: 3px;
+}
+
+nav a {
+	text-decoration: none;
+}
+
 h1 {
 	font-size: 200%;
 }
@@ -75,12 +93,9 @@ h2 {
 	font-size: 120%;
 }
 
-a:visited {
-	color: rgb(138, 0, 126);
-}
-
 a:hover, a:hover * {
 	color: rgb(224, 59, 114);
+	cursor: url(photos/star_cursor.png), auto;
 }
 
 .image_link:hover {
